@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title SERVICES
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', rel='stylesheet')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+    link(rel='stylesheet', href='ser.css')
+  body
+    .container-fluid.bg-dark
+      nav.navbar.navbar-expand-lg.navbar-dark
+        // logo
+        .container
+          a.navbar-brand(href='#') RR
+          // button toggler
+          button.navbar-toggler(data-bs-toggle='collapse', data-bs-target='#collapsiblenavbar', type='button')
+            span.navbar-toggler-icon
+          #collapsiblenavbar.collapse.navbar-collapse.justify-content-center
+            ul#i.navbar-nav.justify-content-center
+              li.nav-item
+                a.nav-link.mx-4(href='./nav.html') HOME
+              // dropdown
+              li.nav-item.dropdown
+                a.nav-link.mx-4(href='#') SERVICES
+              li.nav-item
+                a.nav-link.mx-4(href='./about.html') ABOUT US
+              li.nav-item
+                a.nav-link.mx-4(href='./contact.html') CONTACT US
+    // SLIDER
+    .service
+      #carouselExampleDark.carousel.carousel-dark.slide(data-bs-ride='carousel')
+        .carousel-indicators
+          button.active(type='button', data-bs-target='#carouselExampleDark', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+          button(type='button', data-bs-target='#carouselExampleDark', data-bs-slide-to='1', aria-label='Slide 2')
+          button(type='button', data-bs-target='#carouselExampleDark', data-bs-slide-to='2', aria-label='Slide 3')
+        .carousel-inner
+          .carousel-item.active(data-bs-interval='10000')
+            img.d-block.w-100(src='./seo4.jpg', alt='...')
+          .carousel-item(data-bs-interval='2000')
+            img.d-block.w-100(src='./ser1.jpg', alt='...')
+          .carousel-item
+            img.d-block.w-100(src='./ser2.jpg', alt='...')
+        button.carousel-control-prev(type='button', data-bs-target='#carouselExampleDark', data-bs-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button', data-bs-target='#carouselExampleDark', data-bs-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
+    // OUR EXPERTIES
+    .container.my-5
+      h1 OUR EXPERTIES
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nesciunt enim itaque praesentium necessitatibus eveniet molestiae atque id accusamus consequuntur, maxime ratione dolorem quae accusantium repudiandae distinctio reiciendis ab ad harum illo reprehenderit nobis corporis quisquam eligendi! Optio hic, deleniti cupiditate corrupti quidem vitae quisquam nostrum delectus libero voluptatibus omnis dolore saepe nesciunt molestiae velit architecto quia veniam sed voluptate tempore voluptas. Totam veritatis est fugiat quae eveniet odio deleniti, modi facere repudiandae ipsam aut ipsum animi illum hic reiciendis, provident commodi sapiente laudantium odit cum, nihil similique architecto. Laborum eligendi doloremque atque soluta harum natus dolore aliquid pariatur omnis?
+    // CARDS
+    .container-fluid.my-1
+      .container
+        h1.my-5 OUR SERVICES
+        .row.row-cols-1.row-cols-md-3.g-4
+          .col
+            .card
+              img.card-img-top(src='./card1.jpg', alt='...')
+              .card-body
+                h5.card-title SERVICE 1
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          .col
+            .card
+              img.card-img-top(src='./card2.jpg', alt='...')
+              .card-body
+                h5.card-title SERVICE 2
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          .col
+            .card
+              img.card-img-top(src='./card3.jpg', alt='...')
+              .card-body
+                h5.card-title SERVICE 3
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content.

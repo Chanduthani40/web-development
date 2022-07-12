@@ -1,0 +1,99 @@
+*{
+margin: 0;
+padding: 0;
+}
+.navbar-expand-lg .navbar-nav{
+  /* border: 1px solid black; */
+  
+  border-radius: 20px;
+    box-shadow: 5px 5px 15px #9b8e74
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0 0 0);
+  letter-spacing: 2px;
+}
+/* .navbar-light .navbar-nav .nav-link {
+  color: black;
+  letter-spacing: 2px;
+    font-family: 'grapenuts', cursive;
+} */
+.navbar-light .navbar-toggler {
+  /* color: rgba(0,0,0,.55); */
+  border-color: none;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+/* .container{
+  margin-top: 100px;
+} */
+.w-50{
+  margin: auto;
+}
+.card{
+  background-color: white;
+  max-width: 600px;
+  margin: auto;
+}
+.card-title{
+  text-align: center;
+  font-family: 'Grape Nuts', cursive;
+}
+.card-body{
+  background: linear-gradient(130deg, #8ec1d1, transparent);
+  box-shadow: 6px 10px 20px lightgrey;
+}
+.row{
+  margin: 50px 0px;
+}
+.form-control{
+  /* border-bottom: 1px solid black; */
+  border: 1px solid #918a8a;
+  background: none;
+  border-radius: 20px;
+  /* border-bottom: 1px solid black; */
+  margin: 1rem 0rem 1rem 0rem;
+}
+.form-control:focus{
+  box-shadow: none;
+  background: transparent;
+  /* border-bottom:1px solid silver; */
+  outline: none;
+  border:none;
+}
+textarea{
+  border:1px solid white;
+  outline: none;
+}
+.btn{
+  border: 1px solid black;
+  color: black;
+  border-radius: 20px;
+  /* box-shadow: none; */
+  /* margin-left: 280px; */
+  /* display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 140px; */
+    margin: auto;
+    display: flex;
+    max-width: 140px;
+    justify-content: center;
+    align-items: center;
+}
+/* .btn .my-5{
+  display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 170px;
+} */
+.btn:focus{
+  box-shadow: none;
+}
+.btn:hover{
+  background-color: white;
+}
